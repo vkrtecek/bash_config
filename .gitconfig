@@ -1,0 +1,8 @@
+[user]
+        name = Vojtěch Stuchlík
+        email = vojtech.stuchlik@blogic.cz
+[alias]
+        ll = log --oneline --all --graph --decorate
+        br = branch
+        co = checkout
+        st = status
