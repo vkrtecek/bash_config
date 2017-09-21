@@ -6,4 +6,3 @@ if [ "$BASH" ]; then
   fi
 fi
 
-mesg n
