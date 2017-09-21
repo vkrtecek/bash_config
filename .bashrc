@@ -225,3 +225,5 @@ function hhtml()
 function wedos(){
 	ftp 79175.w75.wedos.net
 }
+
+cd ~
