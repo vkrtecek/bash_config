@@ -223,6 +223,7 @@ function hhtml()
 
 
 function wedos(){
+	echo -e "User: w79175_krtek\nPass: sefFU6eh\n"
 	ftp 79175.w75.wedos.net
 }
 
