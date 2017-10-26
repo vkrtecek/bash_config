@@ -18,7 +18,7 @@ if [ $RET_VAL -eq 0 ]
 then
   DOLLAR="${YELLOW}\$"
 else
- DOLLAR="${RED}\\\$($S)"
+ DOLLAR="${RED}\\\$($RET_VAL)"
 fi
 
 PS1="${GREEN}\w${END}$(__git_ps1 " [%s]") ${DOLLAR}${END} "
