@@ -118,7 +118,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
+if [ -e ~/.bash_git -a -f ~/.bash_git ]
+then
+	source ~/.bash_git
+fi
 
 
 PROMPT_COMMAND="source $HOME/.prompt.sh"
