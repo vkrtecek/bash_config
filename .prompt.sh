@@ -14,11 +14,17 @@ GREEN="\[\e[32;1m\]"
 YELLOW="\[\e[33;1m\]"
 RED="\[\e[1;31m\]"
 
+if [ $(echo $UID) -eq 0 ]; then
+    DOLLAR_CHAR="#"
+else
+    DOLLAR_CHAR="$"
+fi
+
 if [ $RET_VAL -eq 0 ]
 then
-  DOLLAR="${YELLOW}\$"
+    DOLLAR="${YELLOW}${DOLLAR_CHAR}"
 else
- DOLLAR="${RED}\\\$($RET_VAL)"
+    DOLLAR="${RED}${DOLLAR_CHAR}($RET_VAL)"
 fi
 
 PS1="${GREEN}\w${END}$(__git_ps1 " [%s]") ${DOLLAR}${END} "
