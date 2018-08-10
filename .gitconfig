@@ -1,6 +1,6 @@
 [user]
-        name = Vojtěch Stuchlík
-        email = vojtech.stuchlik@blogic.cz
+	name = Štěpán Krteček
+	email = krtek@zlin6.cz
 [alias]
         ll = log --oneline --all --graph --decorate
         br = branch

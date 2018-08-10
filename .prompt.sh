@@ -12,12 +12,12 @@ END="\[\e[0m\]"
 CYAN="\[\e[36;1m\]"
 GREEN="\[\e[32;1m\]"
 YELLOW="\[\e[33;1m\]"
-RED="\[\e[1;31m\]"
+RED="\[\e[31;1m\]"
 
 if [ $(echo $UID) -eq 0 ]; then
     DOLLAR_CHAR="#"
 else
-    DOLLAR_CHAR="$"
+    DOLLAR_CHAR="\\$"
 fi
 
 if [ $RET_VAL -eq 0 ]
